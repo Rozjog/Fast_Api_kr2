@@ -1,5 +1,5 @@
 # Импортируем необходимые модули
-from fastapi import FastAPI, Header, HTTPException, Response
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
