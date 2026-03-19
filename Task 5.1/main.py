@@ -41,11 +41,10 @@ async def get_user(session_token: Optional[str] = Cookie(None)):
         )
     
     username = sessions_db[session_token]
-    
     return {
         "username": username,
         "profile": {
             "username": username,
-            "email": f"{username}@example.com"
+            "email": f"{username}@example.ru"
         }
     }
