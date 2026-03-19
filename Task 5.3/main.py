@@ -126,6 +126,6 @@ async def get_user(response: Response, session_token: Optional[str] = Cookie(Non
         "username": username,
         "profile": {
             "username": username,
-            "email": f"{username}@example.com"
+            "email": f"{username}@example.ru"
         }
     }
