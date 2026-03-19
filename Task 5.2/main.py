@@ -60,11 +60,10 @@ async def get_user(session_token: Optional[str] = Cookie(None)):
         return JSONResponse(status_code=401, content={"message": "Unauthorized"})
 
     username = users_db[user_id]["username"]
-    
     return {
         "username": username,
         "profile": {
             "username": username,
-            "email": f"{username}@example.com"
+            "email": f"{username}@example.ru"
         }
     }
