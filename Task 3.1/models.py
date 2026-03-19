@@ -16,6 +16,6 @@ class UserCreate(BaseModel):
     @validator('age')
     def validate_age(cls, v):
         if v is not None and v <= 0:
-            raise ValueError('Возраст должен быть положительным')
+            raise ValueError('Возраст должен быть >0')
         return v
     
