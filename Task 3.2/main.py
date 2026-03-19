@@ -3,7 +3,7 @@ from typing import Optional
 from products import get_product_by_id, search_products
 from models import Product
 
-app = FastAPI(title="Product API")
+app = FastAPI()
 
 @app.get("/product/{product_id}", response_model=Product)
 async def get_product(product_id: int):
